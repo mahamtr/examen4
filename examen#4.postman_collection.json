@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "f57d0870-d7be-4529-82bd-93ab60823626",
+		"name": "examen#4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "• POST /api/carreras – agregar una nueva carrera",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBmY2MwMTRmMjI5MzRlNDc0ODBkYWYxMDdhMzQwYzIyYmQyNjJiNmMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2NDY1OTk2NjE0MzItbXJtMDBjMDV0amE2cmwydDZncDNmNjFndXM0NW9pdGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2NDY1OTk2NjE0MzItbXJtMDBjMDV0amE2cmwydDZncDNmNjFndXM0NW9pdGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDQ5NTc0NDE4OTc2NzA3Njg5MDkiLCJoZCI6ImFja2xlbmF2ZW51ZS5jb20iLCJlbWFpbCI6Im1hYWkuaGFtQGFja2xlbmF2ZW51ZS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibm9uY2UiOiIxNjI4NTQwNzgyMDk4IiwibmFtZSI6Ik1hYWkgSGFtIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdqZDE2ZHdfNUZoaEtCM2EtN2Z5VE1BX3c0TEliVXQ5UnNPc1prSj1zOTYtYyIsImdpdmVuX25hbWUiOiJNYWFpIiwiZmFtaWx5X25hbWUiOiJIYW0iLCJsb2NhbGUiOiJlbiIsImlhdCI6MTYyODU0MDkxOCwiZXhwIjoxNjI4NTQ0NTE4LCJqdGkiOiIzNmU5YTFkYWJjNDVlZmQxMTI0ZDA0OGMwNmE4MWEyYTA3MDdiYzU4In0.nrU8MnV1A6Rnw9NOkZ6ebYR4AIP4qxxztjiVVv1mjaciv0Lx90y77gU9q0-RwGCh5rJJarIwLrMr1RCKl_F69U0o-69df7X183iTsq1ZHZe50lsv7Avk1ZXHMvaJlBHW_j6r7SkUQj0ciUrcQJTBu17QH5xvXavSrf13nlQkXmrmNW1oTkvmyF3-fvtAtgggHPAe0zRlgrXNhBlY6WTa99zi8vxSxi9UUXY4M5BTqi73YgtBRx3gfYm0ILZf99Od-H_if_sD9UYJzR1R1ANmBcYJul6rRl5I9yTXRtDpQ88Nh4nqafTSIdTt5S1rTxWOxw7724n1ZjQpejPCbt4hIg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth_code",
+						"value": "1elso938gn29smwpqxO3S2ks85",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"hola\",\r\n    \"area\":\"area\",\r\n    \"coordinador\" : \"asfasdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/carreras",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"carreras"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "• GET /api/carreras – muestra todas las carreras",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBmY2MwMTRmMjI5MzRlNDc0ODBkYWYxMDdhMzQwYzIyYmQyNjJiNmMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2NDY1OTk2NjE0MzItbXJtMDBjMDV0amE2cmwydDZncDNmNjFndXM0NW9pdGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2NDY1OTk2NjE0MzItbXJtMDBjMDV0amE2cmwydDZncDNmNjFndXM0NW9pdGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDQ5NTc0NDE4OTc2NzA3Njg5MDkiLCJoZCI6ImFja2xlbmF2ZW51ZS5jb20iLCJlbWFpbCI6Im1hYWkuaGFtQGFja2xlbmF2ZW51ZS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibm9uY2UiOiIxNjI4NTQwNzgyMDk4IiwibmFtZSI6Ik1hYWkgSGFtIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdqZDE2ZHdfNUZoaEtCM2EtN2Z5VE1BX3c0TEliVXQ5UnNPc1prSj1zOTYtYyIsImdpdmVuX25hbWUiOiJNYWFpIiwiZmFtaWx5X25hbWUiOiJIYW0iLCJsb2NhbGUiOiJlbiIsImlhdCI6MTYyODU0MDkxOCwiZXhwIjoxNjI4NTQ0NTE4LCJqdGkiOiIzNmU5YTFkYWJjNDVlZmQxMTI0ZDA0OGMwNmE4MWEyYTA3MDdiYzU4In0.nrU8MnV1A6Rnw9NOkZ6ebYR4AIP4qxxztjiVVv1mjaciv0Lx90y77gU9q0-RwGCh5rJJarIwLrMr1RCKl_F69U0o-69df7X183iTsq1ZHZe50lsv7Avk1ZXHMvaJlBHW_j6r7SkUQj0ciUrcQJTBu17QH5xvXavSrf13nlQkXmrmNW1oTkvmyF3-fvtAtgggHPAe0zRlgrXNhBlY6WTa99zi8vxSxi9UUXY4M5BTqi73YgtBRx3gfYm0ILZf99Od-H_if_sD9UYJzR1R1ANmBcYJul6rRl5I9yTXRtDpQ88Nh4nqafTSIdTt5S1rTxWOxw7724n1ZjQpejPCbt4hIg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_code",
+						"type": "text",
+						"value": "1elso938gn29smwpqxO3S2ks85"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"hola\",\r\n    \"area\":\"area\",\r\n    \"coordinador\" : \"asfasdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/carreras",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"carreras"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "• PUT /api/carreras/{ID de Carrera} – actualize los datos de una carrera",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBmY2MwMTRmMjI5MzRlNDc0ODBkYWYxMDdhMzQwYzIyYmQyNjJiNmMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2NDY1OTk2NjE0MzItbXJtMDBjMDV0amE2cmwydDZncDNmNjFndXM0NW9pdGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2NDY1OTk2NjE0MzItbXJtMDBjMDV0amE2cmwydDZncDNmNjFndXM0NW9pdGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDQ5NTc0NDE4OTc2NzA3Njg5MDkiLCJoZCI6ImFja2xlbmF2ZW51ZS5jb20iLCJlbWFpbCI6Im1hYWkuaGFtQGFja2xlbmF2ZW51ZS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibm9uY2UiOiIxNjI4NTQwNzgyMDk4IiwibmFtZSI6Ik1hYWkgSGFtIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdqZDE2ZHdfNUZoaEtCM2EtN2Z5VE1BX3c0TEliVXQ5UnNPc1prSj1zOTYtYyIsImdpdmVuX25hbWUiOiJNYWFpIiwiZmFtaWx5X25hbWUiOiJIYW0iLCJsb2NhbGUiOiJlbiIsImlhdCI6MTYyODU0MDkxOCwiZXhwIjoxNjI4NTQ0NTE4LCJqdGkiOiIzNmU5YTFkYWJjNDVlZmQxMTI0ZDA0OGMwNmE4MWEyYTA3MDdiYzU4In0.nrU8MnV1A6Rnw9NOkZ6ebYR4AIP4qxxztjiVVv1mjaciv0Lx90y77gU9q0-RwGCh5rJJarIwLrMr1RCKl_F69U0o-69df7X183iTsq1ZHZe50lsv7Avk1ZXHMvaJlBHW_j6r7SkUQj0ciUrcQJTBu17QH5xvXavSrf13nlQkXmrmNW1oTkvmyF3-fvtAtgggHPAe0zRlgrXNhBlY6WTa99zi8vxSxi9UUXY4M5BTqi73YgtBRx3gfYm0ILZf99Od-H_if_sD9UYJzR1R1ANmBcYJul6rRl5I9yTXRtDpQ88Nh4nqafTSIdTt5S1rTxWOxw7724n1ZjQpejPCbt4hIg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "auth_code",
+						"type": "text",
+						"value": "1elso938gn29smwpqxO3S2ks85"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"123123123\",\r\n    \"area\":\"area\",\r\n    \"coordinador\" : \"asfasdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/carreras/612174df371bda0ad444453c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"carreras",
+						"612174df371bda0ad444453c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/carreras?area={areadelacarrera } - muestra todas las carreras de una area",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBmY2MwMTRmMjI5MzRlNDc0ODBkYWYxMDdhMzQwYzIyYmQyNjJiNmMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2NDY1OTk2NjE0MzItbXJtMDBjMDV0amE2cmwydDZncDNmNjFndXM0NW9pdGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2NDY1OTk2NjE0MzItbXJtMDBjMDV0amE2cmwydDZncDNmNjFndXM0NW9pdGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDQ5NTc0NDE4OTc2NzA3Njg5MDkiLCJoZCI6ImFja2xlbmF2ZW51ZS5jb20iLCJlbWFpbCI6Im1hYWkuaGFtQGFja2xlbmF2ZW51ZS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibm9uY2UiOiIxNjI4NTQwNzgyMDk4IiwibmFtZSI6Ik1hYWkgSGFtIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdqZDE2ZHdfNUZoaEtCM2EtN2Z5VE1BX3c0TEliVXQ5UnNPc1prSj1zOTYtYyIsImdpdmVuX25hbWUiOiJNYWFpIiwiZmFtaWx5X25hbWUiOiJIYW0iLCJsb2NhbGUiOiJlbiIsImlhdCI6MTYyODU0MDkxOCwiZXhwIjoxNjI4NTQ0NTE4LCJqdGkiOiIzNmU5YTFkYWJjNDVlZmQxMTI0ZDA0OGMwNmE4MWEyYTA3MDdiYzU4In0.nrU8MnV1A6Rnw9NOkZ6ebYR4AIP4qxxztjiVVv1mjaciv0Lx90y77gU9q0-RwGCh5rJJarIwLrMr1RCKl_F69U0o-69df7X183iTsq1ZHZe50lsv7Avk1ZXHMvaJlBHW_j6r7SkUQj0ciUrcQJTBu17QH5xvXavSrf13nlQkXmrmNW1oTkvmyF3-fvtAtgggHPAe0zRlgrXNhBlY6WTa99zi8vxSxi9UUXY4M5BTqi73YgtBRx3gfYm0ILZf99Od-H_if_sD9UYJzR1R1ANmBcYJul6rRl5I9yTXRtDpQ88Nh4nqafTSIdTt5S1rTxWOxw7724n1ZjQpejPCbt4hIg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_code",
+						"type": "text",
+						"value": "1elso938gn29smwpqxO3S2ks85"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"123123123\",\r\n    \"area\":\"area\",\r\n    \"coordinador\" : \"asfasdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/carreras/asdfasdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"carreras",
+						"asdfasdf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
